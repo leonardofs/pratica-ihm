@@ -13,7 +13,7 @@ module.exports = function() {
     function getConfig() {
         //Variables
             var config = {
-                host: 'db',
+                host: '172.18.0.3',
                 database: 'laboratorios',
                 user: 'root',
                 pass: 'senha',

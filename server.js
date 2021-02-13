@@ -1,5 +1,5 @@
 global.NODE_PORT = process.env.NODE_PORT || 8056;
-const express = require('./config/express');
+const express = require('./app/config/express');
 const app = express();
 const cors = require('cors');
 
