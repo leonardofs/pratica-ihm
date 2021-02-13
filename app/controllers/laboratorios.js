@@ -6,8 +6,9 @@ module.exports = function (app) {
  controller.getAll = async(req, res)=>{
 
     try {
+        console.log('entrou na controller')
         let laboratorios = await laboratoriosRepository.getAll();
-        
+        console.log ('aguardou o repositorio')
         if (laboratorios){
             return res.status(200).json( {...laboratorios})
         }
