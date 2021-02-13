@@ -5,8 +5,6 @@ module.exports = function(app) {
     //Declare model
     var Model = app.sequelize.define('laboratorios',{  
 
-	
-regras	text NULL
         id: {
             type: Sequelize.INTEGER,
             autoIncrement: true,
