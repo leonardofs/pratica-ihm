@@ -9,10 +9,9 @@ module.exports = function (app) {
 
     repository.getAll= async()=>{
         try {
-            
-            console.log ('entrou no repositorio')
+
            let laboratorios = await Laboratorios.findAll();
-           console.log ('recebeu repositorio do sequelize')
+
             return laboratorios;
         } catch (error) {
             console.log(error);

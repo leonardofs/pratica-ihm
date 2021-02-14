@@ -1,11 +1,6 @@
 //Includes
 var Sequelize = require('sequelize');
 
-
-
-inicio do horario	varchar(50)	
-fim do horario	varchar(50)	
-turno	varchar(50)
 //Module exports
 module.exports = function(app) {
     //Declare model
