@@ -32,7 +32,7 @@ module.exports = function(app) {
             }
         },
         turno: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.STRING,
             allowNull: false
         },
         periodo: {

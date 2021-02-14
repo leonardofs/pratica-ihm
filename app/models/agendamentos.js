@@ -10,9 +10,17 @@ module.exports = function(app) {
             primaryKey: true,
             allowNull: false
         },
-        nome: {
+        dia: {
           type: Sequelize.DATE,
           allowNull: false
+        },
+        id_horario: {
+            type: Sequelize.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'horario',
+                key: 'id'
+            }
         },
         status: {
             type: Sequelize.BOOLEAN,
